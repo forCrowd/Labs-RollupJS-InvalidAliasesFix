@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:DataServices m:DataServiceVersion="3.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+        <Schema Namespace="BusinessObjects" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+            <EntityType Name="Element" p5:ClrType="BusinessObjects.Element, BusinessObjects, Version=0.66.0.0, Culture=neutral, PublicKeyToken=null" xmlns:p5="http://schemas.microsoft.com/ado/2013/11/edm/customannotation">
+                <Key>
+                    <PropertyRef Name="Id" />
+                </Key>
+                <Property Name="Id" Type="Edm.Int32" Nullable="false" p7:StoreGeneratedPattern="Identity" xmlns:p7="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+                <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+            </EntityType>
+            <EntityContainer Name="Context" p5:UseClrTypes="true" xmlns:p5="http://schemas.microsoft.com/ado/2013/11/edm/customannotation">
+                <EntitySet Name="Element" EntityType="BusinessObjects.Element" />
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
