@@ -1,13 +1,13 @@
-import "breeze.dataService.odata";
-import "breeze.modelLibrary.backingStore";
-import "datajs";
-
 import { NgModule, Component } from "@angular/core";
 import { HttpModule } from "@angular/http";
 import { BrowserModule } from "@angular/platform-browser";
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import { BreezeBridgeAngular2Module } from "breeze-bridge-angular2";
 import { EntityManager } from "breeze-client";
+
+import "breeze.dataService.odata";
+import "breeze.modelLibrary.backingStore";
+import "datajs";
 
 class CustomEntityManager extends EntityManager {
     constructor() {

@@ -49,7 +49,7 @@
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="default.aspx" />
+    <Content Include="index.html" />
     <None Include="odata\%24metadata" />
     <Content Include="Web.config" />
   </ItemGroup>
